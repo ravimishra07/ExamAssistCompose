@@ -1,4 +1,4 @@
-package com.ravi.examassist
+package com.ravi.examassist.core
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

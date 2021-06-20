@@ -1,4 +1,4 @@
-package com.ravi.examassist
+package com.ravi.examassist.utils
 
 import android.content.Context
 import android.content.SharedPreferences

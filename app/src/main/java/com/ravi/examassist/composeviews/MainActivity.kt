@@ -1,4 +1,4 @@
-package com.ravi.examassist
+package com.ravi.examassist.composeviews
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -16,6 +16,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ravi.examassist.R
 import com.ravi.examassist.ui.theme.ExamAssistTheme
 import com.ravi.examassist.ui.theme.NunitoTypography
 import com.ravi.examassist.ui.theme.Primary
