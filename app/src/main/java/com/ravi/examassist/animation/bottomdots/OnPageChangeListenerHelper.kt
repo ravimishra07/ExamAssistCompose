@@ -1,4 +1,4 @@
-package com.tbuonomo.viewpagerdotsindicator
+package com.ravi.examassist.animation.bottomdots
 
 abstract class OnPageChangeListenerHelper {
   private var lastLeftPosition: Int = -1

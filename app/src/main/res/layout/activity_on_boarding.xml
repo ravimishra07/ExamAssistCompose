@@ -10,47 +10,49 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/onboarding_bg"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:scaleType="fitXY"
-         />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onboarding_bg" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/onBoardingVP"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
-    <LinearLayout
-        android:id="@+id/layoutDots"
-        android:layout_width="120dp"
-        android:layout_height="@dimen/dots_height"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="18dp"/>
-    <Button
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next"
-        android:backgroundTint="@color/white"
-        android:textColor="#2111AD"
-        android:textAllCaps="false"
-        android:paddingRight="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="50dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/white"
         android:drawableEnd="@drawable/next_arrow"
-        />
+        android:clickable="true"
+        app:rippleColor="@color/colorPrimary"
+        app:cornerRadius="20dp"
+        android:paddingEnd="4dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#2111AD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <com.ravi.examassist.animation.bottomdots.WormDotsIndicator
+        android:id="@+id/worm_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        app:dotsColor="@color/ea_white_1000"
+        app:dotsSpacing="8dp"
+        app:dotsSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

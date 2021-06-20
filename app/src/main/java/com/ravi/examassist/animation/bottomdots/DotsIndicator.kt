@@ -1,4 +1,4 @@
-package com.tbuonomo.viewpagerdotsindicator
+package com.ravi.examassist.animation.bottomdots
 
 import android.animation.ArgbEvaluator
 import android.content.Context
@@ -10,7 +10,9 @@ import android.view.View
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.ImageView
 import android.widget.LinearLayout
-import com.tbuonomo.viewpagerdotsindicator.BaseDotsIndicator.Type.DEFAULT
+import com.ravi.examassist.R
+import com.ravi.examassist.animation.bottomdots.BaseDotsIndicator
+import com.ravi.examassist.animation.bottomdots.BaseDotsIndicator.Type.DEFAULT
 
 class DotsIndicator @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
         defStyleAttr: Int = 0) : BaseDotsIndicator(context, attrs, defStyleAttr) {

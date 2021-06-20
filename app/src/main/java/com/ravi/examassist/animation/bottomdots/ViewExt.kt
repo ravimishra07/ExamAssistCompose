@@ -1,4 +1,4 @@
-package com.tbuonomo.viewpagerdotsindicator
+package com.ravi.examassist.animation.bottomdots
 
 import android.view.View
 

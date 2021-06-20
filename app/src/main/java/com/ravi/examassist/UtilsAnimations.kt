@@ -2,13 +2,14 @@ package com.ravi.examassist
 import android.R
 import android.annotation.SuppressLint
 import androidx.viewpager2.widget.ViewPager2
+import com.ravi.examassist.animation.animationtypes.*
 
 
 object UtilsAnimations {
 //    @SuppressLint("NewApi")
 //    fun getTransformer(id: Int): ViewPager2.PageTransformer? {
 //        when (id) {
-//            R.id.action_anti_clock_spin -> return AntiClockSpinTransformation()
+//            R.menu.action_anti_clock_spin -> return AntiClockSpinTransformation()
 //            R.id.action_clock_spin -> return ClockSpinTransformation()
 //            R.id.action_cube_in_depth -> return CubeInDepthTransformation()
 //            R.id.action_cube_in_rotate -> return CubeInRotationTransformation()

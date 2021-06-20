@@ -1,4 +1,4 @@
-package com.tbuonomo.viewpagerdotsindicator
+package com.ravi.examassist.animation.bottomdots
 
 import android.content.Context
 import android.database.DataSetObserver
@@ -16,6 +16,7 @@ import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import androidx.viewpager2.widget.ViewPager2
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
+import com.ravi.examassist.R
 
 abstract class BaseDotsIndicator @JvmOverloads constructor(context: Context,
         attrs: AttributeSet? = null,
@@ -217,7 +218,8 @@ abstract class BaseDotsIndicator @JvmOverloads constructor(context: Context,
       }
 
       override fun addOnPageChangeListener(onPageChangeListenerHelper:
-      OnPageChangeListenerHelper) {
+                                           OnPageChangeListenerHelper
+      ) {
         onPageChangeListener = object : OnPageChangeListener {
           override fun onPageScrolled(position: Int, positionOffset: Float,
                   positionOffsetPixels: Int) {
@@ -272,7 +274,8 @@ abstract class BaseDotsIndicator @JvmOverloads constructor(context: Context,
       }
 
       override fun addOnPageChangeListener(
-              onPageChangeListenerHelper: OnPageChangeListenerHelper) {
+              onPageChangeListenerHelper: OnPageChangeListenerHelper
+      ) {
         onPageChangeCallback = object : OnPageChangeCallback() {
           override fun onPageScrolled(position: Int, positionOffset: Float,
                   positionOffsetPixels: Int) {

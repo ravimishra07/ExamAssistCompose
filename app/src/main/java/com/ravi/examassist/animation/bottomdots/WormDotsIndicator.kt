@@ -1,4 +1,4 @@
-package com.tbuonomo.viewpagerdotsindicator
+package com.ravi.examassist.animation.bottomdots
 
 import android.content.Context
 import android.graphics.drawable.GradientDrawable
@@ -15,7 +15,8 @@ import android.widget.RelativeLayout
 import androidx.dynamicanimation.animation.FloatPropertyCompat
 import androidx.dynamicanimation.animation.SpringAnimation
 import androidx.dynamicanimation.animation.SpringForce
-import com.tbuonomo.viewpagerdotsindicator.BaseDotsIndicator.Type.WORM
+import com.ravi.examassist.R
+import com.ravi.examassist.animation.bottomdots.BaseDotsIndicator.Type.WORM
 
 class WormDotsIndicator @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
         defStyleAttr: Int = 0) : BaseDotsIndicator(context, attrs, defStyleAttr) {
