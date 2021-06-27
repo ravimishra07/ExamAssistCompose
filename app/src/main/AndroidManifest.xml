@@ -12,14 +12,13 @@
         android:theme="@style/Theme.ExamAssist">
         <activity
             android:name=".views.dashboard.DashboardActivity"
-            android:exported="true" />
-        <activity
-            android:name=".core.BaseActtivity"
-            android:exported="true" />
-        <activity
-            android:name="com.ravi.examassist.views.OnBoarding.OnBoardingActivity"
             android:exported="true"
-            android:theme="@style/Theme.ExamAssist.NoActionBar">
+            >
+
+        </activity>
+        <activity
+            android:name=".core.BaseActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,9 +26,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.ExamAssist.NoActionBar" />
+            android:name="com.ravi.examassist.views.OnBoarding.OnBoardingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ExamAssist.NoActionBar">
+
+        </activity>
+
     </application>
 
 </manifest>

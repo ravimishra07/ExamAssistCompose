@@ -8,6 +8,7 @@
     tools:context=".core.BaseActivity">
 
     <include
+        android:id="@+id/base_binding"
         layout="@layout/base_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -20,6 +21,6 @@
         android:fitsSystemWindows="true"
         app:itemIconTint="@color/colorPrimary"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/activity_main_drawer" />
+        app:menu="@menu/drawer_base" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

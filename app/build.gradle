@@ -40,6 +40,9 @@ android {
         compose true
         viewBinding true
     }
+    dataBinding {
+        enabled=true
+    }
     composeOptions {
         kotlinCompilerExtensionVersion compose_version
         kotlinCompilerVersion '1.5.10'

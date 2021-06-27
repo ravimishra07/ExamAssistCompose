@@ -1,6 +1,7 @@
 package com.ravi.examassist.views.OnBoarding
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -17,6 +18,7 @@ import com.ravi.examassist.R
 
 import com.ravi.examassist.animation.animationtypes.*
 import com.ravi.examassist.databinding.ActivityOnBoardingBinding
+import com.ravi.examassist.views.dashboard.DashboardActivity
 
 
 class OnBoardingActivity : AppCompatActivity() {
@@ -50,7 +52,7 @@ class OnBoardingActivity : AppCompatActivity() {
         }
         binding.wormDotsIndicator.setViewPager2(binding.onBoardingVP)
         binding.onBoardingVP.setPageTransformer(AntiClockSpinTransformation())
-
+        binding.btnNext.setOnClickListener{startActivity(Intent(this, DashboardActivity::class.java))}
     }
 /*
 Shortlisted animations
